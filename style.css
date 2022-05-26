@@ -1,0 +1,165 @@
+@keyframes pisca{
+    0% {opacity: : 0.2; }
+    50% {opacity: 1; }
+    100% {opacity: o.2; }
+}
+
+body{
+    margin: o;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.urna{
+    background-color: #ffffbee8;
+    padding: 30px;
+    display: flex;
+}
+
+.tela{
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+
+.teclado{
+    background-color: #403a3a;
+    margin-left: 30px;
+
+}
+
+.teclado-linha{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.teclado--botao {
+    width: 70px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px rgb(85, 83, 83);
+}
+
+.botao--branco{
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+
+}
+
+.botao--corrige{
+    background-color: #f09046;
+    color: #000;
+    font-size: 15px;
+
+
+}
+
+.botao--confirma{
+    background-color: #48c079;
+    color: #000;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+
+
+}
+
+.movel{
+    flex: 1;
+    display: flex;
+
+}
+.movel-esquerda{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.movel-direita{
+    width: 90px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+
+}
+
+.movel-image{
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.movel-image img{
+    width: 100%;
+}
+
+.movel-image.small{
+    width: 80%;
+    font-size: 10px;
+
+}
+
+.movel-inicial{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.movel-cargo{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.movel-numero{
+    height: 50px;
+}
+.numero{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+.movel-restante{
+    flex: 1;
+    line-height: 30px;
+}
+
+.estatico{
+    height: 50px;
+    font-size: 13px;
+    border-top: 2px solid #000;
+    padding-left: 10px;
+
+}
